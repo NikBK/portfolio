@@ -1,0 +1,84 @@
+#homepage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 100px 0; */
+    height: calc(100vh - 10px);
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.intro-box,
+.resume-box,
+.links-box {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.intro-box>span {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.intro-box>.my-name {
+    margin: 6px 0px;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 100%;
+}
+
+.resume-box button {
+    color: white;
+    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: .02rem;
+    width: 152px;
+    border: none;
+}
+
+.links-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 152px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.links-box>.icon>a {
+    cursor: pointer;
+    /* color: rgb(106, 152, 240); */
+    color: rgb(128 167 243);
+}
+
+.links-box>.icon>a:hover {
+    color: white;
+}
+
+.coding-box {
+    text-align: left;
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.coding-box>pre {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: .05rem;
+}
+
+.coding-box>pre>span {
+    cursor: pointer;
+    color: rgb(168, 181, 248);
+}

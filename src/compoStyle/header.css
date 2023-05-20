@@ -1,0 +1,55 @@
+.App-header {
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+    height: 60px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    top: -7%;
+    left: 3%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-items,
+.nav-items .nav-item {
+    display: flex;
+    padding: 6px;
+    margin: 5px;
+    align-items: center;
+}
+
+.nav-item {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+li.nav-item:hover {
+    /* background-color: rgb(115 129 168); */
+    /* background-color: rgb(84, 167, 167); */
+    /* border-bottom: 2px solid #98ebe8; */
+}
+
+.nav-item>a {
+    text-decoration: none;
+    /* color: rgb(184, 209, 231); */
+    color: rgb(246 246 246);
+}
+
+li.nav-item:hover>a {
+    /* color: rgb(35, 35, 35); */
+    color: #9cd1ff;
+}
