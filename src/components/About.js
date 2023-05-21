@@ -11,7 +11,7 @@ const About = () => {
                 <img src="images/mypic_2.jpg" alt='hero' className='hero' />
                 {/* <img src='https://im.rediff.com/movies/2022/apr/14kgf4.jpg' alt='hero' className='hero' /> */}
                 <article className='about-hero'>
-                    Hi, I'm Nikhil BK, a passionate Software developer having {new Date().getFullYear() - 2021} years of experience in PLM Domain.
+                    Hi, I'm Nikhil BK, a passionate Software developer having {((new Date() - new Date('09/27/2021')) / (1000 * 60 * 60 * 24 * 365)).toFixed(2)} years of experience in PLM Domain.
                     I am currently working for <b><i>Dassault Systemes</i></b>, as part of Netvibes team.
                     I have delivered Manufacturing Process Intelligence for the Jaguar & Land Rover customers.
                     <br />
