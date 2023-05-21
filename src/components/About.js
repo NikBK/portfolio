@@ -1,13 +1,15 @@
 import "../compoStyle/about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faJava, faNode } from "@fortawesome/free-brands-svg-icons";
+// import hero_pic from "../images/mypic_2.jpg";
 
 const About = () => {
     return (
         <section id='aboutpage'>
             <h2 className='title'>About me</h2>
             <div className='about-container'>
-                <img src='https://im.rediff.com/movies/2022/apr/14kgf4.jpg' alt='hero' className='hero' />
+                <img src="images/mypic_2.jpg" alt='hero' className='hero' />
+                {/* <img src='https://im.rediff.com/movies/2022/apr/14kgf4.jpg' alt='hero' className='hero' /> */}
                 <article className='about-hero'>
                     Hi, I'm Nikhil BK, a passionate Software developer having {new Date().getFullYear() - 2021} years of experience in PLM Domain.
                     I am currently working for <b><i>Dassault Systemes</i></b>, as part of Netvibes team.
