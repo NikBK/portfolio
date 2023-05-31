@@ -12,12 +12,6 @@
     background-color: rgb(35, 35, 35);
 }
 
-@media screen and (max-width: 700px) {
-    .about-container {
-        flex-direction: column;
-    }
-}
-
 .hero {
     width: 200px;
     height: 200px;
@@ -25,8 +19,26 @@
     margin: 0 10%;
 }
 
+@media screen and (max-width: 700px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .hero {
+        margin-bottom: 10%;
+    }
+}
+
+
+
 .about-hero {
-    text-align: left;
+    text-align: justify;
+}
+
+@media (min-width: 700px) {
+    .about-hero {
+        margin-right: 15%;
+    }
 }
 
 .things-i-love {
