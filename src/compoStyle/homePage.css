@@ -6,6 +6,13 @@
     height: calc(100vh - 10px);
 }
 
+@media screen and (max-width: 700px) {
+    #homepage {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .home-left {
     display: flex;
     flex-direction: column;
@@ -71,6 +78,12 @@
     padding: 20px;
     border-radius: 10px;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 700px) {
+    .coding-box {
+        font-size: 0.7rem;
+    }
 }
 
 .coding-box>pre {

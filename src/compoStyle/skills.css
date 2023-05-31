@@ -21,6 +21,13 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .skills-container {
+        width: 360px;
+        height: 360px;
+    }
+}
+
 .skill {
     position: absolute;
     color: rgb(108 102 250);
