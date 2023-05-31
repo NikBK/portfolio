@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faJava, faNode } from "@fortawesome/free-brands-svg-icons";
 // import hero_pic from "../images/mypic_2.jpg";
 
-const About = () => {
+const About = ({ darkTheme }) => {
     return (
         <section id='aboutpage'>
-            <h2 className='title'>About me</h2>
-            <div className='about-container'>
+            <h2 className='title' style={{ 'color': darkTheme ? "#fff" : "#6c66fa" }}>About me</h2>
+            <div className='about-container' style={{ 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#6c66fa" }} >
                 <img src="images/mypic_2.jpg" alt='hero' className='hero' />
                 {/* <img src='https://im.rediff.com/movies/2022/apr/14kgf4.jpg' alt='hero' className='hero' /> */}
                 <article className='about-hero'>
@@ -20,46 +20,46 @@ const About = () => {
                     I have worked as a coding & MERN stack mentor @<i>Newton School</i>
                 </article>
             </div>
-            <h2 className="title">Things I Love</h2>
+            <h2 className="title" style={{ 'color': darkTheme ? "#fff" : "#6c66fa" }}>Things I Love</h2>
             <div className="things-i-love">
-                <div className="item">
-                    <div className="item-icon">
+                <div className="item" style={{ 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#6c66fa" }}>
+                    <div className="item-icon" style={{ 'color': darkTheme ? "#fff" : "#232323", 'backgroundColor': darkTheme ? "#6c66fa" : "#fff" }}>
                         <FontAwesomeIcon icon={faReact} />
                     </div>
                     <h3 className="item-title">FrontEnd</h3>
                     <div className="item-description">Designing a website is an art and I love to do that</div>
                 </div>
-                <div className="item">
-                    <div className="item-icon">
+                <div className="item" style={{ 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#6c66fa" }}>
+                    <div className="item-icon" style={{ 'color': darkTheme ? "#fff" : "#232323", 'backgroundColor': darkTheme ? "#6c66fa" : "#fff" }}>
                         <FontAwesomeIcon icon={faNode} />
                     </div>
                     <h3 className="item-title">BackEnd</h3>
                     <div className="item-description">Server Side coding is lot more interesting & challenging</div>
                 </div>
-                <div className="item">
-                    <div className="item-icon">
+                <div className="item" style={{ 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#6c66fa" }}>
+                    <div className="item-icon" style={{ 'color': darkTheme ? "#fff" : "#232323", 'backgroundColor': darkTheme ? "#6c66fa" : "#fff" }}>
                         <FontAwesomeIcon icon={faJava} />
                     </div>
                     <h3 className="item-title">Data Structures</h3>
                     <div className="item-description">Coding is always fun, I love to teach & solve problems</div>
                 </div>
 
-                {/* <div className="item">
-                    <div className="item-icon">
+                {/* <div className="item" style={{ 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#6c66fa" }}>
+                    <div className="item-icon"  style={{ 'color': darkTheme ? "#fff" : "#232323", 'backgroundColor': darkTheme ? "#6c66fa" : "#fff" }}>
                         <FontAwesomeIcon icon={faReact} />
                     </div>
                     <h3 className="item-title">React</h3>
                     <div className="item-description">I like building React applications as it is faster and easier.</div>
                 </div>
-                <div className="item">
-                    <div className="item-icon">
+                <div className="item" style={{ 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#6c66fa" }}>
+                    <div className="item-icon"  style={{ 'color': darkTheme ? "#fff" : "#232323", 'backgroundColor': darkTheme ? "#6c66fa" : "#fff" }}>
                         <FontAwesomeIcon icon={faNode} />
                     </div>
                     <h3 className="item-title">Node</h3>
                     <div className="item-description">Node & Express are the best way to build backend.</div>
                 </div>
-                <div className="item">
-                    <div className="item-icon">
+                <div className="item" style={{ 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#6c66fa" }}>
+                    <div className="item-icon"  style={{ 'color': darkTheme ? "#fff" : "#232323", 'backgroundColor': darkTheme ? "#6c66fa" : "#fff" }}>
                         <FontAwesomeIcon icon={faJava} />
                     </div>
                     <h3 className="item-title">JavaScript</h3>

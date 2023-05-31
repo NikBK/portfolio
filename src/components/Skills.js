@@ -2,10 +2,10 @@ import "../compoStyle/skills.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJava, faHtml5, faCss3, faJs, faReact, faNode } from "@fortawesome/free-brands-svg-icons";
 
-const Skills = () => {
+const Skills = ({ darkTheme }) => {
     return (
         <div id="skillspage">
-            <h2 className="title">My Skills</h2>
+            <h2 className="title" style={{ 'color': darkTheme ? "#fff" : "#6c66fa" }}>My Skills</h2>
             <div className="skills-container">
                 <span className="skill">
                     <div className="skill-label">Java</div>

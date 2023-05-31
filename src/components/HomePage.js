@@ -4,7 +4,7 @@ import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-
 import { useState } from "react";
 import resume from "../docs/Nikhil_BK_Resume.pdf";
 
-const HomePage = () => {
+const HomePage = ({ darkTheme }) => {
     const [ageMessage, setAgeMessage] = useState("new Date().getFullYear() - 1998");
     function calAge(e) {
         if (ageMessage.length > 3) {
@@ -17,11 +17,11 @@ const HomePage = () => {
     }
     return (
         <div id='homepage'>
-            <section className='home-left'>
+            <section className='home-left' style={{ 'color': darkTheme ? "#fff" : "#000" }}>
                 <IntroBox />
             </section>
             <section className='home-right'>
-                <CodingBox calAge={calAge} ageMessage={ageMessage} />
+                <CodingBox darkTheme={darkTheme} calAge={calAge} ageMessage={ageMessage} />
             </section>
         </div>
     )
@@ -47,9 +47,9 @@ const IntroBox = () => {
     </>
 }
 
-const CodingBox = ({ calAge, ageMessage }) => {
+const CodingBox = ({ darkTheme, calAge, ageMessage }) => {
     return <>
-        <div className='coding-box'>
+        <div className='coding-box' style={{ 'color': darkTheme ? "#fff" : "#5a53ff", 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#fff" }}>
             <pre>
                 1&nbsp;class&nbsp;
                 <b>AboutMe</b>
@@ -69,7 +69,7 @@ const CodingBox = ({ calAge, ageMessage }) => {
             </pre>
             <pre>
                 5&nbsp;&nbsp;
-                &nbsp;&nbsp;this.age = <span onClick={calAge}>{ageMessage}</span>;
+                &nbsp;&nbsp;this.age = <span style={{ 'color': darkTheme ? "#a8b5f8" : "#000" }} onClick={calAge}>{ageMessage}</span>;
             </pre>
             <pre>
                 6&nbsp;&nbsp;

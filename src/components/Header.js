@@ -4,9 +4,9 @@ import "../compoStyle/header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 
-const Header = () => {
+const Header = ({ handleTheme, darkTheme }) => {
     return (
-        <header className="App-header">
+        <header className="App-header" style={{ 'backgroundColor': darkTheme ? "#232323" : "#ffffff" }}>
             <div className='logo'>
                 <a href='#' style={{ textDecoration: "none" }}>
                     <Logo />
@@ -14,12 +14,14 @@ const Header = () => {
             </div>
             <nav className='navbar'>
                 <ul className='nav-items'>
-                    <li className='nav-item'><a href='#'>home</a></li>
-                    <li className='nav-item'><a href='#aboutpage'>about</a></li>
-                    <li className='nav-item'><a href='#skillspage'>skills</a></li>
-                    <li className='nav-item'><a href='#sideProjects'>projects</a></li>
-                    <li className='nav-item'><a href='#contactpage'>contact</a></li>
-                    <li className='nav-item'><FontAwesomeIcon icon={faMoon} /></li>
+                    <li className='nav-item'><a href='#' style={{ 'color': darkTheme ? "#f6f6f6" : "#000" }}>home</a></li>
+                    <li className='nav-item'><a href='#aboutpage' style={{ 'color': darkTheme ? "#f6f6f6" : "#000" }}>about</a></li>
+                    <li className='nav-item'><a href='#skillspage' style={{ 'color': darkTheme ? "#f6f6f6" : "#000" }}>skills</a></li>
+                    <li className='nav-item'><a href='#sideProjects' style={{ 'color': darkTheme ? "#f6f6f6" : "#000" }}>projects</a></li>
+                    <li className='nav-item'><a href='#contactpage' style={{ 'color': darkTheme ? "#f6f6f6" : "#000" }}>contact</a></li>
+                    <li className='nav-item' onClick={handleTheme} style={{ 'color': darkTheme ? "#f6f6f6" : "#000" }}>
+                        {darkTheme ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
+                    </li>
                 </ul>
                 {/* <div className='nav-item'>home</div>
                 <div className='nav-item'>about</div>

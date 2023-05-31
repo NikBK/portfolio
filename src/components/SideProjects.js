@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const SideProjects = () => {
+const SideProjects = ({ darkTheme }) => {
     return (
         <div id="sideProjects">
-            <h2 className="title">Side Projects</h2>
+            <h2 className="title" style={{ 'color': darkTheme ? "#fff" : "#6c66fa" }}>Projects</h2>
             <div className="project-container">
                 {projectData.map(projectDeails => <Project key={projectDeails.id} projectDetails={projectDeails} />)}
             </div>
