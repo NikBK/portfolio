@@ -1,11 +1,13 @@
 import "../compoStyle/contactMe.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "./context";
 
-const ContactMe = ({ darkTheme }) => {
+const ContactMe = () => {
+    const { theme } = useTheme();
     return (
         <div id="contactpage">
-            <h2 className="title" style={{ 'color': darkTheme ? "#fff" : "#6c66fa" }}>Get In Touch</h2>
+            <h2 className={`title ${theme}_title`}>Get In Touch</h2>
             <div className="contact-container">
                 <div className="thanks">
                     <div className="thanks-box">

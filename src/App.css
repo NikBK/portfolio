@@ -27,6 +27,14 @@
   z-index: -1;
 }
 
+.dark_App {
+  background-color: #191919;
+}
+
+.light_App {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 700px) {
   .App::before {
     height: 780px;

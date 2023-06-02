@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { useState } from "react";
 import resume from "../docs/Nikhil_BK_Resume.pdf";
+import { useTheme } from "./context";
 
-const HomePage = ({ darkTheme }) => {
+const HomePage = () => {
+    const { theme } = useTheme();
     const [ageMessage, setAgeMessage] = useState("new Date().getFullYear() - 1998");
     function calAge(e) {
         if (ageMessage.length > 3) {
@@ -17,11 +19,11 @@ const HomePage = ({ darkTheme }) => {
     }
     return (
         <div id='homepage'>
-            <section className='home-left' style={{ 'color': darkTheme ? "#fff" : "#000" }}>
+            <section className={`home-left ${theme}_home-left`}>
                 <IntroBox />
             </section>
             <section className='home-right'>
-                <CodingBox darkTheme={darkTheme} calAge={calAge} ageMessage={ageMessage} />
+                <CodingBox theme={theme} calAge={calAge} ageMessage={ageMessage} />
             </section>
         </div>
     )
@@ -47,9 +49,9 @@ const IntroBox = () => {
     </>
 }
 
-const CodingBox = ({ darkTheme, calAge, ageMessage }) => {
+const CodingBox = ({ theme, calAge, ageMessage }) => {
     return <>
-        <div className='coding-box' style={{ 'color': darkTheme ? "#fff" : "#5a53ff", 'backgroundColor': darkTheme ? "rgb(35, 35, 35)" : "#fff" }}>
+        <div className={`coding-box ${theme}_coding-box`}>
             <pre>
                 1&nbsp;class&nbsp;
                 <b>AboutMe</b>
@@ -69,7 +71,7 @@ const CodingBox = ({ darkTheme, calAge, ageMessage }) => {
             </pre>
             <pre>
                 5&nbsp;&nbsp;
-                &nbsp;&nbsp;this.age = <span style={{ 'color': darkTheme ? "#a8b5f8" : "#000" }} onClick={calAge}>{ageMessage}</span>;
+                &nbsp;&nbsp;this.age = <span style={{ 'color': theme == "dark" ? "#a8b5f8" : "#000" }} onClick={calAge}>{ageMessage}</span>;
             </pre>
             <pre>
                 6&nbsp;&nbsp;

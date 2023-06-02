@@ -1,3 +1,11 @@
+.dark_title {
+    color: #fff;
+}
+
+.light_title {
+    color: #6c66fa;
+}
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;

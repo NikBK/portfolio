@@ -12,6 +12,14 @@
     z-index: 1;
 }
 
+.dark_App-header {
+    background-color: #232323;
+}
+
+.light_App-header {
+    background-color: #fff;
+}
+
 .logo {
     position: relative;
     top: -7%;
@@ -55,10 +63,19 @@ li.nav-item:hover {
 .nav-item>a {
     text-decoration: none;
     /* color: rgb(184, 209, 231); */
-    color: rgb(246 246 246);
+    /* color: rgb(246 246 246); */
+}
+
+.dark_nav-anchor {
+    color: #f6f6f6;
+}
+
+.light_nav-anchor {
+    color: #000;
 }
 
 li.nav-item:hover>a {
     /* color: rgb(35, 35, 35); */
-    color: #9cd1ff;
+    /* color: #9cd1ff; */
+    color: #0089ff;
 }

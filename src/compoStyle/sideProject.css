@@ -4,6 +4,14 @@
     justify-content: space-around;
 }
 
+.dark_title {
+    color: #fff;
+}
+
+.light_title {
+    color: #6c66fa;
+}
+
 .project-card {
     margin: 20px;
     /* width: 250px;

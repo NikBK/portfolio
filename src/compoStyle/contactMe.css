@@ -1,3 +1,11 @@
+.dark_title {
+    color: #fff;
+}
+
+.light_title {
+    color: #6c66fa;
+}
+
 .contact-container {
     position: relative;
 }
