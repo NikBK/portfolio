@@ -34,7 +34,7 @@ const IntroBox = () => {
         <div className='intro-box'>
             <span>Hello, I'm</span>
             <h2 className='my-name'>NIKHIL BK</h2>
-            <span className='job-role'>Delegent Software Developer</span>
+            <span className='job-role'>Diligent Software Developer</span>
         </div>
         <div className='resume-box'>
             <a href={resume} download="Nikhil_Resume.pdf">
