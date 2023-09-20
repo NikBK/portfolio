@@ -43,5 +43,14 @@ export const projectData = [
         gitLink: "https://github.com/NikBK/HotelManagementApp",
         hostedLink: "https://hostel-booking-bg.netlify.app",
         icons: ["", ""]
+    },
+    {
+        id: 6,
+        name: "3D Image Slider",
+        info: "",
+        imageLink: "../images/3d-image-slider.PNG",
+        gitLink: "https://github.com/NikBK/3d-image-slider",
+        hostedLink: "https://3d-image-slider.netlify.app",
+        icons: ["", ""]
     }
 ];
