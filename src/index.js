@@ -6,9 +6,9 @@ import ThemeContext from "./components/context";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  <ThemeContext>
-    <App />
-  </ThemeContext>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <ThemeContext>
+      <App />
+    </ThemeContext>
+  </React.StrictMode>
 );

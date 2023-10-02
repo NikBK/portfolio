@@ -1,6 +1,8 @@
+var id = 1;
+
 export const projectData = [
     {
-        id: 1,
+        id: id++,
         name: "Expense Tracker",
         info: "",
         imageLink: "../images/expense_tracker.png",
@@ -9,7 +11,7 @@ export const projectData = [
         icons: ["", ""]
     },
     {
-        id: 2,
+        id: id++,
         name: "Resume Builder",
         info: "",
         imageLink: "../images/resume_builder.png",
@@ -18,7 +20,7 @@ export const projectData = [
         icons: ["", ""]
     },
     {
-        id: 3,
+        id: id++,
         name: "Weather App",
         info: "",
         imageLink: "../images/weather_app.png",
@@ -27,7 +29,7 @@ export const projectData = [
         icons: ["", ""]
     },
     {
-        id: 4,
+        id: id++,
         name: "Chat App",
         info: "",
         imageLink: "../images/chat_app.png",
@@ -36,7 +38,7 @@ export const projectData = [
         icons: ["", ""]
     },
     {
-        id: 5,
+        id: id++,
         name: "Hostel Booking",
         info: "",
         imageLink: "../images/hostel_booking.png",
@@ -45,12 +47,21 @@ export const projectData = [
         icons: ["", ""]
     },
     {
-        id: 6,
+        id: id++,
         name: "3D Image Slider",
         info: "",
         imageLink: "../images/3d-image-slider.PNG",
         gitLink: "https://github.com/NikBK/3d-image-slider",
         hostedLink: "https://3d-image-slider.netlify.app",
+        icons: ["", ""]
+    },
+    {
+        id: id++,
+        name: "Memories",
+        info: "",
+        imageLink: "../images/memories.PNG",
+        gitLink: "https://github.com/NikBK/memories",
+        hostedLink: "https://memories-client-nikbk.vercel.app",
         icons: ["", ""]
     }
 ];
