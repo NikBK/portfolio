@@ -19,7 +19,7 @@ const About = () => {
                     <br />
                     <br />
                     I have love towards Full stack web development and have created few user interfaces.
-                    I have worked as a coding & MERN stack mentor @<i>Newton School</i>
+                    {/* I have worked as a coding & MERN stack mentor @<i>Newton School</i> */}
                 </article>
             </div>
             <h2 className={`title ${theme}_title`}>Things I Love</h2>
