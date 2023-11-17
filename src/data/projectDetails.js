@@ -3,8 +3,17 @@ var id = 1;
 export const projectData = [
     {
         id: id++,
+        name: "Feed",
+        info: "Social media application",
+        imageLink: "../images/feed.PNG",
+        gitLink: "https://github.com/NikBK/feed",
+        hostedLink: "https://feed-nikbk.vercel.app/",
+        icons: ["", ""]
+    },
+    {
+        id: id++,
         name: "Memories",
-        info: "",
+        info: "Capture every small memory",
         imageLink: "../images/memories.PNG",
         gitLink: "https://github.com/NikBK/memories",
         hostedLink: "https://memories-client-nikbk.vercel.app",
@@ -13,7 +22,7 @@ export const projectData = [
     {
         id: id++,
         name: "Resume Builder",
-        info: "",
+        info: "Build your resume with ease",
         imageLink: "../images/resume_builder.png",
         gitLink: "https://github.com/NikBK/resumeBuilder",
         hostedLink: "https://your-resume-builder.netlify.app",
@@ -22,7 +31,7 @@ export const projectData = [
     {
         id: id++,
         name: "Weather App",
-        info: "",
+        info: "Check weather of any location",
         imageLink: "../images/weather_app.png",
         gitLink: "https://github.com/NikBK/weather-app",
         hostedLink: "https://express-weather-app.netlify.app",
@@ -31,7 +40,7 @@ export const projectData = [
     {
         id: id++,
         name: "Expense Tracker",
-        info: "",
+        info: "Track your income and expenses",
         imageLink: "../images/expense_tracker.png",
         gitLink: "https://github.com/NikBK/expense-tracker",
         hostedLink: "https://expense-tracker-nikbk.vercel.app",
@@ -40,7 +49,7 @@ export const projectData = [
     {
         id: id++,
         name: "Hostel Booking",
-        info: "",
+        info: "Book a hostel room online",
         imageLink: "../images/hostel_booking.png",
         gitLink: "https://github.com/NikBK/HotelManagementApp",
         hostedLink: "https://hostel-booking-bg.netlify.app",
@@ -49,7 +58,7 @@ export const projectData = [
     {
         id: id++,
         name: "Chat App",
-        info: "",
+        info: "Communicate with friends and family",
         imageLink: "../images/chat_app.png",
         gitLink: "https://github.com/NikBK/chat-app",
         hostedLink: "https://express-chat-app.netlify.app",
@@ -58,7 +67,7 @@ export const projectData = [
     {
         id: id++,
         name: "3D Image Slider",
-        info: "",
+        info: "3D image slider",
         imageLink: "../images/3d-image-slider.PNG",
         gitLink: "https://github.com/NikBK/3d-image-slider",
         hostedLink: "https://3d-image-slider.netlify.app",
