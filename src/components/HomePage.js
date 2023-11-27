@@ -2,7 +2,8 @@ import "../compoStyle/homePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { useState } from "react";
-import resume from "../docs/Nikhil_BK_Resume.pdf";
+// import resume from "../docs/Nikhil_BK_Resume.pdf";
+import resume from "../docs/2023_Nikhil_BK_Resume.pdf"
 import { useTheme } from "./context";
 
 const HomePage = () => {
