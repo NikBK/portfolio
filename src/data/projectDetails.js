@@ -72,5 +72,32 @@ export const projectData = [
         gitLink: "https://github.com/NikBK/3d-image-slider",
         hostedLink: "https://3d-image-slider.netlify.app",
         icons: ["", ""]
+    },
+    {
+        id: id++,
+        name: "Snake Game",
+        info: "Snake Game",
+        imageLink: "../images/snake_game.PNG",
+        gitLink: "https://github.com/NikBK/snake-game",
+        hostedLink: "https://nikbk.github.io/snake-game/",
+        icons: ["", ""]
+    },
+    {
+        id: id++,
+        name: "Tic Tac Toe",
+        info: "Tic Tac Toe",
+        imageLink: "../images/tic_tac_toe.PNG",
+        gitLink: "https://github.com/NikBK/TicTacToe",
+        hostedLink: "https://nikbk.github.io/TicTacToe/",
+        icons: ["", ""]
+    },
+    {
+        id: id++,
+        name: "To Do List",
+        info: "To Do List",
+        imageLink: "../images/to_do_list.PNG",
+        gitLink: "https://github.com/NikBK/ToDoList-react-app",
+        hostedLink: "https://nikbk.github.io/ToDoList-react-app/",
+        icons: ["", ""]
     }
 ];
