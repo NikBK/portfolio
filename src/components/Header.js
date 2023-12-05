@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from "./Logo";
 import "../compoStyle/header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
+import { faMoon, faSun, } from "@fortawesome/free-regular-svg-icons";
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from './context';
 
 const Header = () => {
     const { theme, handleTheme } = useTheme();
+    const [showMobileNav, setShowMobileNav] = useState(false);
 
     return (
         <header className={`App-header ${theme}_App-header`}>
@@ -16,7 +18,7 @@ const Header = () => {
                 </a>
             </div>
             <nav className='navbar'>
-                <ul className='nav-items'>
+                <ul className={`nav-items mobileNavBar ${!showMobileNav ? "hideNav" : ""} ${theme}_mobileBar`}>
                     <li className='nav-item'><a href='#' className={`${theme}_nav-anchor`}>home</a></li>
                     <li className='nav-item'><a href='#aboutpage' className={`${theme}_nav-anchor`}>about</a></li>
                     <li className='nav-item'><a href='#skillspage' className={`${theme}_nav-anchor`}>skills</a></li>
@@ -26,6 +28,9 @@ const Header = () => {
                         {theme === "dark" ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
                     </li>
                 </ul>
+                <div className={`mobileMenu ${theme}_color`} onClick={() => setShowMobileNav(prev => !prev)}>
+                    {showMobileNav ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
+                </div>
                 {/* <div className='nav-item'>home</div>
                 <div className='nav-item'>about</div>
                 <div className='nav-item'>skills</div>
