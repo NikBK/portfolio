@@ -3,6 +3,15 @@ var id = 1;
 export const projectData = [
     {
         id: id++,
+        name: "Fantasy Heaven",
+        info: "Fantasy cricket app",
+        imageLink: "../images/fantasy-heaven.PNG",
+        gitLink: "https://github.com/NikBK/fantasy-Haven",
+        hostedLink: "https://fantasy-haven-nikbk.vercel.app/",
+        icons: ["", ""]
+    },
+    {
+        id: id++,
         name: "Feed",
         info: "Social media application",
         imageLink: "../images/feed.PNG",
