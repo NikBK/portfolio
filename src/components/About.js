@@ -13,14 +13,24 @@ const About = () => {
                 <img src="images/mypic_2.jpg" alt='hero' className='hero' />
                 {/* <img src='https://im.rediff.com/movies/2022/apr/14kgf4.jpg' alt='hero' className='hero' /> */}
                 <article className='about-hero'>
-                    Hi, I'm Nikhil BK, a passionate Software developer having {((new Date() - new Date('09/27/2021')) / (1000 * 60 * 60 * 24 * 365)).toFixed(2)} years of experience in PLM Domain.
-                    I am currently working for <b><i>Dassault Systemes</i></b>, as part of Netvibes team.
-                    I have delivered Manufacturing Process Intelligence for the Jaguar & Land Rover customers.
+                    Hi, I'm Nikhil BK, a passionate Software Developer with {((new Date() - new Date('09/27/2021')) / (1000 * 60 * 60 * 24 * 365)).toFixed(2)} years of experience in the tech industry.
                     <br />
                     <br />
-                    I have love towards Full stack web development and have created few user interfaces.
-                    {/* I have worked as a coding & MERN stack mentor @<i>Newton School</i> */}
+                    Currently, I am working at <b><i>SA Software Technology</i></b>:
+                    <ul>
+                        <li>Focusing on Frontend Development using React.js.</li>
+                        <li>Collaborating with cross-functional teams to create responsive and engaging user interfaces.</li>
+                    </ul>
+
+                    Previously, I was part of <b><i>Dassault Systemes</i></b>:
+                    <ul>
+                        <li>Delivered Manufacturing Process Intelligence solutions for Jaguar & Land Rover customers.</li>
+                        <li>Worked within the Netvibes team to enhance data visualization and user experience.</li>
+                    </ul>
+
+                    My passion lies in Full Stack Web Development, and I've created several user interfaces that prioritize user experience and functionality. Additionally, I have served as a coding and MERN stack mentor <b>@<i>Newton School</i></b>, helping aspiring developers enhance their skills and knowledge.
                 </article>
+
             </div>
             <h2 className={`title ${theme}_title`}>Things I Love</h2>
             <div className="things-i-love">
